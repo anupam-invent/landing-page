@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Landing Page</title>
+</head>
+<body>
+    <main>
+        <!-- overlay -->
+        <div class="relative overflow-hidden h-screen w-full z-10">
+                <div class="absolute -left-10 -bottom-52"><img src="./img/shape.png" class="w-[650px] opacity-15"></div>
+                <div class="absolute top-36 left-36"><i class="fa-solid fa-star text-4xl opacity-10 text-lightBlue animate-star"></i></div>
+                <div class="absolute top-36 right-80"><i class="fa-solid fa-snowflake text-7xl opacity-10 text-lightBlue animate-star"></i></div>
+                <div class="absolute bottom-60 left-96 translate-x-80"><i class="fa-regular fa-heart text-lightBlue text-7xl opacity-10 animate-ping"></i></div>
+            <!-- header area -->
+            <header class="container">
+                <nav class="animate__animated animate__fadeInDown animate__slow	2s relative flex h-24 w-full justify-between items-center">
+                    <div class="flex items-center gap-4"><img src="./img/logo.png" class="h-12"><h1 class="font-bold text-lg md:text-2xl ">Anupam Invent</h1></div>
+                    <div class="hidden md:flex absolute py-14 md:py-0 top-0 md:top-auto left-0 md:left-auto md:static justify-center md:w-auto w-full bg-deepBlue md:bg-transparent" id="navMenu">
+                        <ul class="flex items-center md:flex-row flex-col gap-12 text-white md:text-gray-900">
+                            <li><a href="#" class="nav_link">Home</a></li>
+                            <li><a href="#" class="nav_link">Pricing</a></li>
+                            <li><a href="#" class="nav_link">About Me</a></li>
+                            <li class="btn-hover"><a href="https://www.fiverr.com/users/anupam_invent/" class="btn block">Contact Me</a></li>
+                        </ul>
+                        <div class="md:hidden absolute top-7 right-9" id="navClose"><i class="fa-solid fa-xmark text-2xl text-white"></i></div>
+                    </div>
+                    <div class="md:hidden"><i class="fa-solid fa-bars" id="hamburger"></i></div>
+                </nav>
+
+            </header>
+            <!-- hero section -->
+            <section class="h-[663px] w-full container grid gap-10 md:grid-cols-2 mt-5 md:mt-10 grid-flow-row items-center">
+                <div class="animate__animated animate__fadeInLeft flex flex-col justify-center gap-6 leading-8">
+                    <h1 class="md:text-5xl md:leading-snug text-4xl font-bold text-lightGray">Future Is Here, Start Exploring Now.</h1>
+                    <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut facilis laboriosam vero, ut sunt velit!</p>
+                    <div class="btn-hover btn w-40"><a href="https://www.fiverr.com/users/anupam_invent/">Get started</a></div>
+                </div>
+                <div class="animate__animated animate__fadeInRight animate__slow 2s">
+                    <img src="./img/person.png" class="w-full md:scale-125 md:translate-x-24 drop-shadow-lg animate-heroMove">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
